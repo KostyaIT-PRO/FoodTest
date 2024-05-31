@@ -1,0 +1,100 @@
+@import "../css/normalize.css";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
+/* iframe {
+    border: none;
+} */
+/* .visually-hidden {
+    position: fixed;
+    transform: scale(0);
+} */
+.container {
+  max-width: 118.4rem;
+  margin: 0 auto;
+}
+
+.svg-sprite {
+  display: none;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+.menu__linck-text {
+  font-weight: 400;
+  font-size: 3.2rem;
+  color: #797575;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 14.1rem;
+  height: 12.1rem;
+}/*# sourceMappingURL=style.css.map */

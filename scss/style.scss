@@ -2,11 +2,16 @@
 
 @import "./base/variables";
 @import "./base/base";
+@import "./base/fonts";
 
 @import "./component/menu";
 @import "./component/section-btn";
+@import "./component/decor-line";
 
 @import "./layaut/header";
 @import "./layaut/footer";
 
 @import "./section/hero";
+@import "./section/teste";
+@import "./section/recipes";
+@import "./section/blog";

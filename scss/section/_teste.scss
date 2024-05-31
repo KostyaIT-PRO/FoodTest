@@ -1,0 +1,45 @@
+.teste{
+    padding-top: 7.7rem;
+    &__title{
+        margin-bottom: 7.6rem;
+    }
+    &__list{
+        width: 100%;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(55rem, 1fr));
+        row-gap: 2.8rem;
+        margin-bottom: 10rem;
+    }
+    &__card{
+        padding: 2rem 1.8rem 0;
+        border-radius: 0.5rem;
+        &:hover{
+            background: #ff7f48;
+            color: $text-color-white;
+        }
+    }
+    &__card-link{
+        display: flex;
+        min-height: 16.7rem;
+        
+    }
+    &__card-img{
+        width: 14.4rem;
+        height: 12rem;
+        margin-right: 1.4rem;
+        border-radius: 2rem;
+    }
+    &__card-title{
+        font-weight: 500;
+        font-size: 4.8rem;
+    }
+    &__card-text{
+        font-weight: 400;
+        font-size: 3rem;
+    }
+
+    &__btn{
+        margin-bottom: 4.2rem;
+    }
+}

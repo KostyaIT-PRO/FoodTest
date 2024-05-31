@@ -10,7 +10,6 @@
 
 body, html {
   position: relative;
-  overflow-x: hidden;
   font-family: "Playfair Display", sans-serif;
   font-weight: 500;
   font-size: 10px;
@@ -73,6 +72,13 @@ fieldset {
   display: none;
 }
 
+.section-title {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 6.4rem;
+  text-align: center;
+}
+
 .menu__list {
   display: flex;
   align-items: center;
@@ -123,6 +129,14 @@ fieldset {
   cursor: pointer;
 }
 
+.decor-line {
+  width: 74rem;
+  height: 0.4rem;
+  background: #d9d9d9;
+  margin: auto;
+  border: none;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -143,6 +157,38 @@ fieldset {
   height: 12.1rem;
 }
 
+.footer {
+  padding: 2.4rem 0 13.8rem;
+  background: #ff6624;
+}
+.footer__logo {
+  width: 42rem;
+  height: 30.8rem;
+}
+.footer__content {
+  color: #ffffff;
+  padding-left: 11rem;
+}
+.footer__content-left {
+  max-width: 52.3rem;
+}
+.footer__text {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 5.5rem;
+}
+.footer__social-title {
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 2.9rem;
+}
+.footer__social-links {
+  display: flex;
+  align-items: center;
+  gap: 3.1rem;
+}
+
 .hero {
   height: 100vh;
   background: url("../images/hero-bg-image.jpg") center/cover no-repeat;
@@ -153,7 +199,7 @@ fieldset {
   align-items: center;
   padding-top: 43.4rem;
 }
-.hero__contant {
+.hero__content {
   max-width: 66.9rem;
 }
 .hero__title {
@@ -168,4 +214,77 @@ fieldset {
   font-size: 3.2rem;
   text-align: center;
   margin-bottom: 6rem;
+}
+
+.teste {
+  padding-top: 7.7rem;
+}
+.teste__title {
+  margin-bottom: 7.6rem;
+}
+.teste__list {
+  width: 100%;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(55rem, 1fr));
+  row-gap: 2.8rem;
+  margin-bottom: 10rem;
+}
+.teste__card {
+  padding: 2rem 1.8rem 0;
+  border-radius: 0.5rem;
+}
+.teste__card:hover {
+  background: #ff7f48;
+  color: #ffffff;
+}
+.teste__card-link {
+  display: flex;
+  min-height: 16.7rem;
+}
+.teste__card-img {
+  width: 14.4rem;
+  height: 12rem;
+  margin-right: 1.4rem;
+  border-radius: 2rem;
+}
+.teste__card-title {
+  font-weight: 500;
+  font-size: 4.8rem;
+}
+.teste__card-text {
+  font-weight: 400;
+  font-size: 3rem;
+}
+.teste__btn {
+  margin-bottom: 4.2rem;
+}
+
+.recipes {
+  padding-top: 3.3rem;
+}
+.recipes__title {
+  margin-bottom: 8.3rem;
+}
+.recipes__list {
+  width: 100%;
+  margin-bottom: 7.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(42.5rem, 1fr));
+}
+.recipes__link {
+  display: block;
+}
+.recipes__img {
+  width: 100%;
+}
+.recipes__btn {
+  margin-bottom: 4.2rem;
+}
+
+.blog {
+  padding-top: 3.5rem;
+}
+.blog__title {
+  margin-bottom: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

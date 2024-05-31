@@ -1,0 +1,37 @@
+.footer{
+    padding: 2.4rem 0 13.8rem;
+    background: #ff6624;
+    &__logo{
+        width: 42rem;
+        height: 30.8rem;
+    }
+    &__content{
+        color: $text-color-white;
+        padding-left: 11rem;
+    }
+    &__content-left{
+        max-width: 52.3rem;
+    }
+    &__content-center{
+
+    }
+    &__content-right{
+
+    }
+    &__text{
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: 36px;
+        margin-bottom: 5.5rem;
+    }
+    &__social-title{
+        font-weight: 500;
+        font-size: 40px;
+        margin-bottom: 2.9rem;
+    }
+    &__social-links{
+        display: flex;
+        align-items: center;
+        gap: 3.1rem;
+    }
+}

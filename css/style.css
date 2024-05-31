@@ -1,4 +1,5 @@
 @import "../css/normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 *,
 *::before,
 *::after {
@@ -10,9 +11,12 @@
 body, html {
   position: relative;
   overflow-x: hidden;
-  font-family: "Nunito", sans-serif;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 500;
   font-size: 10px;
   scroll-behavior: smooth;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 img,
@@ -61,7 +65,7 @@ fieldset {
     transform: scale(0);
 } */
 .container {
-  max-width: 118.4rem;
+  max-width: 178.4rem;
   margin: 0 auto;
 }
 
@@ -74,11 +78,49 @@ fieldset {
   align-items: center;
   gap: 6rem;
 }
-
 .menu__linck-text {
   font-weight: 400;
   font-size: 3.2rem;
   color: #797575;
+  font-family: "Playfair Display", sans-serif;
+}
+.menu__linck {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu__linck-icon {
+  color: #797575;
+  margin-bottom: 0.4rem;
+}
+.menu__linck-active .menu__linck-icon {
+  color: #ff6624;
+}
+.menu__linck-tel {
+  background-color: #ff6624;
+  color: #ffffff;
+  border-radius: 2rem;
+  padding: 1.8rem 4.1rem 1.8rem 6.1rem;
+  display: block;
+  font-weight: 500;
+  font-size: 3.2rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+.section-btn {
+  border-radius: 3rem;
+  background-color: #ff6624;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+  text-align: center;
+  padding: 2rem 6.2rem;
+  display: block;
+  max-width: 29rem;
+  margin: auto;
+  cursor: pointer;
 }
 
 .header {
@@ -86,15 +128,44 @@ fieldset {
   top: 0;
   left: 0;
   width: 100vw;
+  z-index: 1000;
+  padding-bottom: 30px;
+  background-color: #ffffff;
 }
-
 .header__inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  max-height: 12.9rem;
 }
-
 .header__logo {
   width: 14.1rem;
   height: 12.1rem;
+}
+
+.hero {
+  height: 100vh;
+  background: url("../images/hero-bg-image.jpg") center/cover no-repeat;
+}
+.hero__inner {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-top: 43.4rem;
+}
+.hero__contant {
+  max-width: 66.9rem;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 6.4rem;
+  color: #ab0505;
+  margin-bottom: 2.6rem;
+  text-align: center;
+}
+.hero__subtitle {
+  font-weight: 400;
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 6rem;
 }/*# sourceMappingURL=style.css.map */

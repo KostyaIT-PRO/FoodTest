@@ -1,8 +1,12 @@
 @import "../css/normalize.css";
 
+@import "./base/variables";
 @import "./base/base";
 
 @import "./component/menu";
+@import "./component/section-btn";
 
 @import "./layaut/header";
 @import "./layaut/footer";
+
+@import "./section/hero";

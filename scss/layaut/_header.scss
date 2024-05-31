@@ -3,16 +3,18 @@
     top: 0;
     left: 0;
     width: 100vw;
-
-}
-
-.header__inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__logo{
-    width: 14.1rem;
-    height: 12.1rem;
+    z-index: 1000;
+    padding-bottom: 30px;
+    background-color: $bg-color;
+    
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        max-height: 12.9rem;
+    }
+    &__logo{
+        width: 14.1rem;
+        height: 12.1rem;
+    }
 }

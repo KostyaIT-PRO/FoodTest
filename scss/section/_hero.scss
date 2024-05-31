@@ -1,0 +1,26 @@
+.hero{
+    height: 100vh;
+    background: url('../images/hero-bg-image.jpg')center/cover no-repeat;
+    &__inner{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-top: 43.4rem;
+    }
+    &__contant{
+        max-width: 66.9rem;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 6.4rem;
+        color: #ab0505;
+        margin-bottom: 2.6rem;
+        text-align: center;
+    }
+    &__subtitle{
+        font-weight: 400;
+        font-size: 3.2rem;
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+}

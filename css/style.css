@@ -1,4 +1,5 @@
 @import "../css/normalize.css";
+@import "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 *,
 *::before,
@@ -137,6 +138,91 @@ fieldset {
   border: none;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10.7rem;
+}
+
+.swiper-slide {
+  font-family: "DM Sans", sans-serif;
+  color: #000;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide__content {
+  padding: 7rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.swiper-slide__content::before, .swiper-slide__content::after {
+  content: "";
+  width: 6.7rem;
+  height: 5.9rem;
+  color: #000;
+  position: absolute;
+  z-index: 10;
+  background: url("../../icon/swiper-decor-commas.svg");
+}
+.swiper-slide__content::before {
+  top: 0;
+  left: 0;
+}
+.swiper-slide__content::after {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+.swiper-slide__image {
+  width: 24.4rem;
+  height: 24.4rem;
+  margin-right: 2rem;
+}
+.swiper-slide__texts {
+  max-width: 106.5rem;
+}
+.swiper-slide__title {
+  font-weight: 500;
+  font-size: 4.8rem;
+}
+.swiper-slide__text {
+  font-weight: 400;
+  font-size: 3.6rem;
+}
+
+.swiper-pagination-bullet {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff7f48;
+  fill: #ff7f48;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 6.6rem;
+  height: 6.6rem;
+  background-color: #ff7f48;
+  border-radius: 100%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 900 !important;
+}
+
+.swiper-position {
+  position: absolute;
+  top: 0 !important;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -168,25 +254,84 @@ fieldset {
 .footer__content {
   color: #ffffff;
   padding-left: 11rem;
+  display: flex;
+  justify-content: space-between;
 }
 .footer__content-left {
   max-width: 52.3rem;
 }
+.footer__content-right {
+  max-width: 46rem;
+}
 .footer__text {
   font-family: "Playfair Display", sans-serif;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 3.6rem;
   margin-bottom: 5.5rem;
 }
 .footer__social-title {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 4rem;
   margin-bottom: 2.9rem;
 }
 .footer__social-links {
   display: flex;
   align-items: center;
   gap: 3.1rem;
+}
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.4rem;
+}
+.footer__menu-link {
+  font-weight: 500;
+  font-size: 3.6rem;
+  color: #f3ebe7;
+  font-family: "DM Sans", sans-serif;
+}
+.footer__menu-link-active {
+  font-weight: 700;
+  color: #fff;
+}
+.footer__payments {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.footer__form {
+  display: flex;
+  flex-direction: column;
+}
+.footer__form-label {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 0.4rem;
+}
+.footer__form-input {
+  border: 0.3rem solid #fff;
+  border-radius: 0.5rem;
+  width: 46rem;
+  height: 6.2rem;
+  background-color: transparent;
+  padding: 1rem;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 4.5rem;
+}
+.footer__form-button {
+  max-width: 13.8rem;
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  margin-bottom: 6.1rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+  text-align: center;
+  color: #ff6624;
 }
 
 .hero {
@@ -233,6 +378,7 @@ fieldset {
 .teste__card {
   padding: 2rem 1.8rem 0;
   border-radius: 0.5rem;
+  transition: all 0.3s ease-in;
 }
 .teste__card:hover {
   background: #ff7f48;
@@ -283,7 +429,7 @@ fieldset {
 }
 
 .blog {
-  padding-top: 3.5rem;
+  padding: 3.5rem 0 19rem;
 }
 .blog__title {
   margin-bottom: 1.5rem;

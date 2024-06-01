@@ -1,0 +1,93 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10.7rem;
+}
+
+.swiper-slide {
+    font-family: $font-family;
+    color: #000;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content{
+        padding: 7rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    &__content::before,
+    &__content::after{
+        content: "";
+        width: 6.7rem;
+        height: 5.9rem;
+        color: #000;
+        position: absolute;
+        // top: 0;
+        // left: 0;
+        z-index: 10;
+        background: url("../../icon/swiper-decor-commas.svg");
+    }
+    &__content::before{
+        top: 0;
+        left: 0;
+    }
+    &__content::after{
+        bottom: 0;
+        right: 0;
+        transform: rotate(180deg);
+    }
+
+
+
+    &__image{
+        width: 24.4rem;
+        height: 24.4rem;
+        margin-right: 2rem;
+    }
+    &__texts{
+        max-width: 106.5rem;
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 4.8rem;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 3.6rem;
+    }
+}
+
+.swiper-pagination-bullet{
+    width: 2.5rem;
+    height: 2.5rem;
+    
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #ff7f48;
+    fill: #ff7f48;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    width: 6.6rem;
+    height: 6.6rem;
+    background-color: #ff7f48;
+    border-radius: 100%;
+}
+
+.swiper-button-next:after, 
+.swiper-button-prev:after{
+    // content: "";
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 900 !important;
+    
+}
+
+.swiper-position{
+    position: absolute;
+    top: 0 !important;
+}

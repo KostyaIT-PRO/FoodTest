@@ -11,4 +11,9 @@
     max-width: 29rem;
     margin: auto;
     cursor: pointer;
+    // transition: transform 0.2s ease;
+    &:active{
+        transform: translate(0.3rem, 0.3rem);
+        
+    }
 }

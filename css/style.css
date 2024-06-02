@@ -11,7 +11,7 @@
 
 body, html {
   position: relative;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 10px;
   scroll-behavior: smooth;
@@ -65,7 +65,8 @@ fieldset {
     transform: scale(0);
 } */
 .container {
-  max-width: 178.4rem;
+  max-width: calc(178.4rem + 28px);
+  padding: 0 14px;
   margin: 0 auto;
 }
 
@@ -73,6 +74,26 @@ fieldset {
   display: none;
 }
 
+@media (max-width: 1990px) {
+  body, html {
+    font-size: 8px;
+  }
+}
+@media (min-width: 2000px) {
+  body, html {
+    font-size: 13px;
+  }
+}
+@media (min-width: 2500px) {
+  body, html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 3000px) {
+  body, html {
+    font-size: 20px;
+  }
+}
 .section-title {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
@@ -90,6 +111,7 @@ fieldset {
   font-size: 3.2rem;
   color: #797575;
   font-family: "Playfair Display", sans-serif;
+  transition: all 0.3s ease;
 }
 .menu__linck {
   text-align: center;
@@ -97,9 +119,14 @@ fieldset {
   flex-direction: column;
   align-items: center;
 }
+.menu__linck:hover .menu__linck-text {
+  color: #ff6624;
+}
 .menu__linck-icon {
   color: #797575;
   margin-bottom: 0.4rem;
+  width: 3.4rem;
+  height: 4.2rem;
 }
 .menu__linck-active .menu__linck-icon {
   color: #ff6624;
@@ -108,11 +135,35 @@ fieldset {
   background-color: #ff6624;
   color: #ffffff;
   border-radius: 2rem;
-  padding: 1.8rem 4.1rem 1.8rem 6.1rem;
-  display: block;
+  padding: 1.8rem 4.1rem 1.8rem 2rem;
+  display: flex;
+  gap: 0.3rem;
   font-weight: 500;
   font-size: 3.2rem;
   font-family: "DM Sans", sans-serif;
+}
+.menu__linck-tel::before {
+  content: "";
+  width: 3.8rem;
+  height: 3.8rem;
+  background: url("../icon/phone-icone.svg") center/cover no-repeat;
+}
+.menu__social {
+  display: flex;
+  align-items: center;
+  background-size: 100%;
+  gap: 2.9rem;
+}
+.menu__social > svg {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menu__social > a {
+  display: flex;
+  align-items: center;
+  width: 2rem;
+  height: 3rem;
+  color: #a79d9d;
 }
 
 .section-btn {
@@ -128,6 +179,9 @@ fieldset {
   max-width: 29rem;
   margin: auto;
   cursor: pointer;
+}
+.section-btn:active {
+  transform: translate(0.3rem, 0.3rem);
 }
 
 .decor-line {
@@ -165,7 +219,7 @@ fieldset {
   color: #000;
   position: absolute;
   z-index: 10;
-  background: url("../../icon/swiper-decor-commas.svg");
+  background: url("../icon/swiper-decor-commas.svg") center/cover no-repeat;
 }
 .swiper-slide__content::before {
   top: 0;
@@ -326,7 +380,7 @@ fieldset {
   padding: 0.4rem 1rem;
   border-radius: 1rem;
   background-color: #ffffff;
-  margin-bottom: 6.1rem;
+  margin-bottom: 6rem;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 3.6rem;
@@ -342,10 +396,11 @@ fieldset {
   display: flex;
   justify-content: end;
   align-items: center;
-  padding-top: 43.4rem;
 }
 .hero__content {
   max-width: 66.9rem;
+  margin-top: 50vh;
+  transform: translateY(-50%);
 }
 .hero__title {
   font-weight: 700;
@@ -397,6 +452,9 @@ fieldset {
 .teste__card-title {
   font-weight: 500;
   font-size: 4.8rem;
+}
+.teste__card:hover .teste__card-title {
+  font-weight: 700;
 }
 .teste__card-text {
   font-weight: 400;

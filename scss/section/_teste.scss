@@ -35,6 +35,11 @@
         font-weight: 500;
         font-size: 4.8rem;
     }
+
+    &__card:hover &__card-title{
+        font-weight: 700;
+    }
+
     &__card-text{
         font-weight: 400;
         font-size: 3rem;

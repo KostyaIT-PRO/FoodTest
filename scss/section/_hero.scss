@@ -5,10 +5,11 @@
         display: flex;
         justify-content: end;
         align-items: center;
-        padding-top: 43.4rem;
     }
     &__content{
         max-width: 66.9rem;
+        margin-top: 50vh;
+        transform: translateY(-50%);
     }
     &__title{
         font-weight: 700;
